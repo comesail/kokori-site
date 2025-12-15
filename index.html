@@ -3,15 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kokori — Food Measurement Reference & Tools</title>
-
-  <meta name="description"
-        content="Kokori provides reference pages and simple arithmetic tools based on published food measurement definitions and yield data." />
-
+  <title>Kokori</title>
+  <meta name="description" content="Reference tools for food measurement terminology and published yield factors." />
   <link rel="canonical" href="https://kokori.be/" />
 
-  <!-- Plausible Analytics -->
-  <!-- paste your exact Plausible script here -->
+  <!-- Plausible -->
+  <script async src="https://plausible.io/js/pa-c8L2PBG2zf10Gf2Y7j5o1.js"></script>
 
   <script type="application/ld+json">
   {
@@ -19,148 +16,85 @@
     "@type": "WebSite",
     "name": "Kokori",
     "url": "https://kokori.be/",
-    "description": "Reference pages and arithmetic tools based on published food measurement standards."
+    "description": "Reference tools for food measurement terminology and published yield factors."
   }
   </script>
 
   <style>
-    body {
-      margin: 0;
-      font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: #111;
-      background: #fff;
-    }
-    .wrap {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 28px 16px;
-    }
-    header {
-      border-bottom: 1px solid #eaeaea;
-      padding-bottom: 18px;
-    }
-    header h1 {
-      margin: 0 0 6px;
-      font-size: 30px;
-    }
-    header p {
-      margin: 0;
-      color: #444;
-      max-width: 720px;
-    }
-    nav {
-      margin-top: 12px;
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    nav a {
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      color: inherit;
-    }
-    nav a:hover {
-      border-bottom-color: currentColor;
-    }
-    section {
-      margin-top: 26px;
-    }
-    h2 {
-      margin: 0 0 8px;
-      font-size: 22px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 14px;
-      margin-top: 10px;
-    }
-    .card {
-      border: 1px solid #eaeaea;
-      border-radius: 14px;
-      padding: 16px;
-    }
-    .card h3 {
-      margin: 0 0 6px;
-      font-size: 18px;
-    }
-    .card p {
-      margin: 0;
-      color: #555;
-    }
-    footer {
-      margin-top: 34px;
-      padding-top: 16px;
-      border-top: 1px solid #eaeaea;
-      color: #555;
-      font-size: 13px;
-    }
-    footer a {
-      color: inherit;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
+    :root { --max: 980px; --border: rgba(0,0,0,.12); --muted: rgba(0,0,0,.70); }
+    body { margin: 0; font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #111; }
+    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 26px 16px; }
+    nav a { margin-right: 14px; color: #111; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    h1 { margin: 0 0 8px; font-size: 40px; letter-spacing: -0.02em; }
+    .lede { margin: 0 0 18px; color: var(--muted); font-size: 18px; max-width: 60ch; }
+    .cta { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 4px; }
+    .btn { display: inline-block; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border); text-decoration: none; color: #111; }
+    .btn.primary { background: #111; color: #fff; border-color: #111; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 18px; }
+    .card { border: 1px solid var(--border); border-radius: 14px; padding: 16px; background: #fff; }
+    .card h2 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+    footer { border-top: 1px solid var(--border); color: var(--muted); padding-top: 18px; }
+    footer a { color: inherit; }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Kokori</h1>
-      <p>
-        Kokori provides reference pages and simple arithmetic tools based on
-        published food measurement definitions and yield data.
-      </p>
-      <nav>
-        <a href="/tools/">Tools</a>
-        <a href="/reference/">Reference</a>
-        <a href="/methodology.html">Methodology</a>
-        <a href="/privacy.html">Privacy</a>
-        <a href="/terms.html">Terms</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-    </header>
+<header>
+  <h1>Kokori</h1>
+  <p class="lede">
+    Practical reference tools for published food measurement definitions and yield factors.
+    No recipes. No advice. Just stated inputs, stated constants, and direct arithmetic.
+  </p>
 
-    <section>
-      <h2>Tools</h2>
-      <div class="grid">
-        <div class="card">
-          <h3><a href="/tools/">Food Measurement Tools</a></h3>
-          <p>
-            Arithmetic tools that transform user inputs using declared constants
-            and published reference values.
-          </p>
-        </div>
-      </div>
-    </section>
+  <nav>
+    <a href="/tools/">Tools</a>
+    <a href="/reference/">Reference</a>
+    <a href="/methodology.html">Methodology</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
 
-    <section>
-      <h2>Reference</h2>
-      <div class="grid">
-        <div class="card">
-          <h3><a href="/reference/">Definitions & Sources</a></h3>
-          <p>
-            Definitions, terminology, and source notes derived from
-            authoritative publications.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div>
-        Kokori is an independent reference site and is not affiliated with or
-        endorsed by any government agency.
-      </div>
-      <div style="margin-top:6px;">
-        © Kokori ·
-        <a href="/privacy.html">Privacy</a> ·
-        <a href="/terms.html">Terms</a>
-      </div>
-    </footer>
+  <div class="cta">
+    <a class="btn primary" href="/tools/">Browse tools</a>
+    <a class="btn" href="/reference/">Browse reference</a>
   </div>
+</header>
+
+<main>
+  <section class="grid">
+    <article class="card">
+      <h2>Tools</h2>
+      <p>Single-purpose calculators and lookups based on declared constants and published reference values.</p>
+      <p><a href="/tools/">Open Tools →</a></p>
+    </article>
+
+    <article class="card">
+      <h2>Reference</h2>
+      <p>Definitions and explanations that document what terms mean and where values come from.</p>
+      <p><a href="/reference/">Open Reference →</a></p>
+    </article>
+
+    <article class="card">
+      <h2>Methodology</h2>
+      <p>How Kokori selects sources, cites them, and avoids inference-heavy behavior.</p>
+      <p><a href="/methodology.html">Read Methodology →</a></p>
+    </article>
+  </section>
+</main>
+
+<footer>
+  © <span id="y"></span> Eastgrain Co. LLC. All rights reserved. ·
+  <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
+
+
 
